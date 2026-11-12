@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatbot maria bauab - Assistente Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="chat-container">
+
+        <header class="chat-header">
+            <img src="bauab.jpg" width="30%" alt="">
+           
+
+            <div>
+                <h2>chat-mahoraga</h2>
+                <span>gabriel junio</span>
+                <br><br>
+                pode me perguntar sobre a escola,professores e alunos
+            </div>
+        </header>
+
+        <main id="chat-box" class="chat-box">
+            <div class="message bot">
+                Olá! 👋 Sou o gabriel, seu assistente escolar!
+                <br><br>
+                Pode me perguntar sobre informática,
+                programação, tecnologia e escola.
+            </div>
+        </main>
+
+        <div class="suggestions">
+            <button onclick="perguntar('ola')">ola</button>
+            <button onclick="perguntar('oi')">oi</button>
+            <button onclick="perguntar('ei')">ei</button>
+        </div>
+
+        <footer class="chat-input">
+            <input
+                type="text"
+                id="user-input"
+                placeholder="Digite sua pergunta..."
+                onkeydown="if(event.key === 'Enter') enviarMensagem()"
+            >
+
+            <button onclick="enviarMensagem()">➤</button>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
